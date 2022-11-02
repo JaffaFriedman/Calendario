@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <title>Plan del mes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>-->
+ <script src="main.js">  </script>   
 	<!-- Header -->
   <header class="bg-dark  text-bg-dark " > 
     <div class="container-fluid text-center " >
@@ -25,12 +27,84 @@
       </nav>
     </div>
 </header>
+<div class="container"> 
+  <!-- 
+<button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="This popover is themed via CSS variables.">
+  Custom popover
+</button>-->
 
-<div class="container">
     <div class="row   ">
         <div class="col">
         <div class="card mt-3 border-info">
-            <h5 class="card-header bg-info text-dark bg-opacity-25">Metas del Mes</h5>
+   <!--         <h5 class="card-header bg-info text-dark bg-opacity-25">Metas del Mes</h5>-->
+   <button class="btn  dropdown-toggle  bg-info bg-opacity-25" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Plan del Mes
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title  bg-info bg-opacity-25 text-dark" id="offcanvasExampleLabel">Planifica tu año</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>Durante Elul revisa tu rol en la vida y metas de la vida y que estás haciendo para lograrlas.</p>
+        <p>Has una revisión de cada área de tu vida, puedes usar las preguntas sugeridas.</p>
+        <p>Para trabajar durante el año, define tus responsabilidades, como estas con respecto al año anterior. </p>
+        <p>Revisa lo que haces y te gustaría mejorar, lo que no haces y quisieras empezar a hacer.</p>
+        <p>Divide el trabajo anual por meses. </p>
+        <p>Cada mes enfócate en un área de la vida y un mida para así lograr un avance en todas las áreas. </p>
+      </div>
+    </div>   
+  </div>
+    <!-- 
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Planifica tu año</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+ 
+          <p>Durante Elul revisa tu rol en la vida y metas de la vida y que estás haciendo para lograrlas.</p>
+          <p>Has una revisión de cada área de tu vida, puedes usar las preguntas sugeridas.</p>
+          <p>Para trabajar durante el año, define tus responsabilidades, como estas con respecto al año anterior. </p>
+          <p>Revisa lo que haces y te gustaría mejorar, lo que no haces y quisieras empezar a hacer.</p>
+          <p>Divide el trabajo anual por meses. </p>
+          <p>Cada mes enfócate en un área de la vida y un mida para así lograr un avance en todas las áreas. </p>
+         
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">ttttt2222</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        xxxxx
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Plan del Mes</a>
+
+                -->
+             
             <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"> </p>
@@ -41,11 +115,32 @@
           </div>   
         </div>   
     </div>
+ 
+
+
     <div class="row    row-cols-1 row-cols-md-2">
  
       <div class="col ">
         <div class="card mt-3 border-info">
-            <h5 class="card-header bg-info text-dark bg-opacity-25">Area de la vida a trabajar</h5>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn  dropdown-toggle  bg-info bg-opacity-25" data-bs-toggle="dropdown" aria-expanded="false">
+                Area de la Vida Trabajar
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"  role="button">Relación con Hashem</a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Relación de pareja </a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Relación con mis hijos  </a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Relación con mis amigos</a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Mi rol en la comunidad</a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Cumplimiento de Mitzvot</a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Mi apariencia física</a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Mis finanzas </a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Estudios de Torah </a></li>
+                <li><a class="dropdown-item" href="#"  role="button">Mi vida profesional </a></li>
+              </ul>
+            </div>
+          </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item" style="height: 7rem;">Mis Oblicaciones</li>
               <li class="list-group-item" style="height: 7rem;">Aspectos que nunca he hecho</li>
@@ -56,7 +151,20 @@
     </div>
     <div class="col ">
         <div class="card mt-3 border-info">
-            <h5 class="card-header bg-info text-dark bg-opacity-25">Mida a Trabajar</h5>
+     
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn  dropdown-toggle  bg-info bg-opacity-25" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mida a Trabajar
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"  role="button">La envia</a></li>
+                  <li><a class="dropdown-item" href="#"  role="button">La ira</a></li>
+                  <li><a class="dropdown-item" href="#"  role="button">Busqueda del placer inmediato</a></li>
+                  <li><a class="dropdown-item" href="#"  role="button">Honor</a></li>
+                </ul>
+              </div>
+            </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item" style="height: 7rem;">Diagnostico</li>
                 <li class="list-group-item" style="height: 7rem;">Aspectos para fortalecer</li>
