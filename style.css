@@ -1,0 +1,76 @@
+/* Estilos Proyecto Dekko
+   Autor Jaffa Friedman
+   Fecha 21-10-2022
+*/
+
+body {
+  background-color: #F8F9FA;
+}
+
+#jumbotron{
+  background-color: #212529;
+
+}
+
+ .azul {
+  background-color: #371053;
+ }
+ 
+.col  {
+    padding: 1;
+  }
+  
+.card {
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+  
+  hr {
+    font-size: xx-small;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .enlace {
+    color: #212529;
+    background-color: #F8F9FA;
+    text-decoration: none;
+    line-height: 2;
+  }
+     
+  .input-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  /* Comandos para ser usados en footer*/
+  .container-footer {
+    width: 100%;
+    max-width: 1800px;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px; 
+    gap: 10px;
+    } 
+
+.footer-box {
+    height: 100px;
+    margin : 15px ;
+    width: 300px;
+}   
+
+@media  screen and (max-width:1000px) {
+     .container-footer{
+        grid-template-columns:   repeat(1, 1fr);
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+ 
